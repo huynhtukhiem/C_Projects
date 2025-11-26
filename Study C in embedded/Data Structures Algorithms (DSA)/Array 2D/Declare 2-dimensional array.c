@@ -9,7 +9,7 @@ int main(){
     // Input the element of array
     for(int i = 0; i < row; i++){
         for(int j = 0; j < col; j++){
-            printf("a[%d][%d] = ", i,j);
+            printf("Enter a[%d][%d] = ", i,j);
             scanf("%d", &a[i][j]);
         }
     }
