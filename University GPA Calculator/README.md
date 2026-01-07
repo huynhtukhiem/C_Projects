@@ -1,6 +1,15 @@
 # 📘 CHƯƠNG TRÌNH TÍNH ĐIỂM MÔN HỌC (C LANGUAGE)
 ## 📌 Video demo
-..
+...
+
+## 📌 Giới thiệu
+Đây là chương trình về C đầu tiên mình viết để có thể tính điểm tổng kết 1 môn học một cách nhanh – chính xác – trực quan.  
+Hỗ trợ đầy đủ 3 loại học phần:
+- **Lý thuyết**
+-  **Thực hành**
+-  **Tích hợp (Lý thuyết + Thực hành)**
+Ứng dụng: Thay vì phải dùng extension trong web hoặc dùng máy tính bỏ túi thì nay mình đã có thể ước chừng điểm tổng kết môn với các thang điểm khác nhau một cách nhanh chóng hơn thông thường và kể cả khi không có mạng internet.
+
 ## 📌 Mô tả sơ lược
 - Ngày thực hiện: 5/12/2025
 - Ngày hoàn thành: 12/12/2025
@@ -10,13 +19,6 @@
 - Người hỗ trợ: Bạn bè, Google, Chatgpt, Claude
 - Trường đại học Công nghiệp TPHCM
    
-## 📌 Giới thiệu
-Đây là chương trình hoặc có thể xem là dự án về C đầu tiên tôi viết để có thể tính điểm tổng kết môn một cách nhanh – chính xác – trực quan.  
-Hỗ trợ đầy đủ 3 loại học phần:
-- **Lý thuyết**
--  **Thực hành**
--  **Tích hợp (Lý thuyết + Thực hành)**
-
 ## 📌 Chức năng
 Nhập các loại điểm thi gồm: Thường kỳ, giữa kỳ và cuối kỳ. Sau đó chương trình sẽ tính toán điểm tổng kết môn học và quy đổi dựa trên công thức do nhà trường cung cấp gồm:
   - Học phần lý thuyết:
