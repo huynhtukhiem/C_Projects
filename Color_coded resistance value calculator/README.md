@@ -62,5 +62,10 @@ Giá trị điện trở = (vòng_1 * 100 + vòng_2 * 10 + vòng_3) + 10^vòng_4
 ```
 - Trường hợp người dùng không nhập kí tự trong khoảng được cho hoặc nhập một kí tự khác với các kí tự được cho
 
-=> Báo lỗi và nhập lại cho đến khi nhập đúng. Sau mỗi phép tính thực hiện thao tác tính lại hoặc quay về menu
+=> Báo lỗi và nhập lại cho đến khi nhập đúng.
+
+- Sau mỗi phép tính đề xuất các luồng thực hiện: 
+  - Tính lại
+  - Quay về menu chính
+  - Thoát chương trình
 
