@@ -4,7 +4,7 @@
 Nhập từng vòng màu -> Tính toán -> Xuất kết quả
 
 # Bảng vòng màu điện trở
-
+https://hocvienit.vn/wp-content/uploads/2022/07/giao-trinh-ve-dien-tro-cach-doc-dien-tro-theo-vach-mau-4.jpg
 
 # Công thức tính điện trở 4 vòng màu
 ```
