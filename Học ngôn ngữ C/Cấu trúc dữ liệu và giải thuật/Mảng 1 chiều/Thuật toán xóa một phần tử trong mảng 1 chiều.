@@ -1,0 +1,100 @@
+// Có 2 cách xóa: 
+// Cách 1: Xóa phần tử bằng vị trí
+// Cách 2: Xóa phần tử bằng giá trị
+/*
+Cách 1: Xóa phần tử bằng vị trí
+mảng có n phần tử, ta xóa phần tử tại vị trí k 
+Ý tưởng: khi xóa tại k, ta dịch và lưu các phần tử sau k ( k + 1) sang trái 1 đơn vị tức nghĩa là chính k, sau đó cập nhật lại kích thước mảng
+VD: mảng có 5 phần tử [1,2,3,4,5] ta xóa phần tử tại vị trí 2 thì phần tử vị trí 3 sẽ nằm vị trí 2 cứ tiếp tục hết n-1
+*/
+#include<stdio.h>
+void Xoa_phan_tu(int a[], int *n, int k){
+    for(int i = k; i < *n-1; i++){
+        a[i] = a[i+1]; // Phần tử sau vị trí k lúc này là vị trí k
+    }
+    (*n)--; // Cập nhật kích thước mảng
+}
+
+void Nhap_mang(int a[], int n){
+    for(int i = 0; i < n; i++){
+        printf("Nhap phan tu a[%d]: ", i);
+        scanf("%d", &a[i]);
+    }
+}
+void In_mang(int a[], int n){
+    for(int i = 0; i < n; i++){
+        printf("%d ", a[i]);
+    }
+    printf("\n");
+}
+int main(){
+    int n,k;
+    printf("Nhap so luong phan tu trong mang: ");
+    scanf("%d", &n);
+    int a[n];
+    Nhap_mang(a,n);
+    printf("Mang ban dau la: ");
+    In_mang(a,n);
+    printf("Nhap vi tri muon xoa: ");
+    scanf("%d", &k);
+
+    Xoa_phan_tu(a,&n,k);
+    In_mang(a,n);
+    return 0;
+}
+/*
+Cách 2: Xóa phần tử cần xóa
+Ý tưởng: Nếu ko có phần tử trong mảng => trả về không xóa gì hết
+  Tạo một cái biến để xác định cái vị trí của phần tử cần xóa trong mảng, sau khi có được vị trí của phần tử cần xóa, làm như cách 1
+*/
+#include<stdio.h>
+void Xoa_phan_tu(int a[], int *n, int k){
+    int found = -1; // Vì mảng chạy từ 0 đến n đến gán cho biến found = -1
+    for(int i = 0; i < *n; i++){
+        if(a[i] == k){
+            found = i; // Xác định được vị trí của phần tử cần xóa
+            break;
+        }
+    }
+    if(found == -1){
+        printf("Khong tim thay phan tu %d can xoa\n", k);
+        return;
+    }
+    for(int i = found; i < *n-1; i++){
+        a[i] = a[i+1];
+    }
+    (*n)--;
+}
+
+void Nhap_mang(int a[], int n){
+    for(int i = 0; i < n; i++){
+        printf("Nhap phan tu a[%d]: ", i);
+        scanf("%d", &a[i]);
+    }
+}
+void In_mang(int a[], int n){
+    for(int i = 0; i < n; i++){
+        printf("%d ", a[i]);
+    }
+    printf("\n");
+}
+
+int main(){
+    int n,k;
+    printf("Nhap so luong phan tu trong mang: ");
+    scanf("%d", &n);
+    int a[n];
+    Nhap_mang(a,n);
+    printf("Mang ban dau la: ");
+    In_mang(a,n);
+
+    printf("Nhap phan tu muon xoa: ");
+    scanf("%d", &k);
+    Xoa_phan_tu(a,&n,k);
+    In_mang(a,n);
+    return 0;
+}
+
+
+
+
